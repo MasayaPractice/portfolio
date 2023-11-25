@@ -111,6 +111,7 @@ document.querySelectorAll('.js-delete-link')
       const container = document.querySelector(
         `.js-cart-item-container-${productId}`
       );
+      console.log(container);
       container.remove();
     });
   });
