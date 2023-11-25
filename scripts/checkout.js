@@ -3,6 +3,7 @@ import {products} from '../data/products.js';
 import{formatCurrency} from './Util/money.js';
 
 
+
 let cartSummaryHTML = '';
 
 cart.forEach((cartItem) => {
@@ -98,6 +99,8 @@ cart.forEach((cartItem) => {
 
 document.querySelector('.js-order-summary')
   .innerHTML = cartSummaryHTML;
+
+
 
 document.querySelectorAll('.js-delete-link')
   .forEach((link) => {
